@@ -9,7 +9,9 @@ from app.schemas.temperature_reading_schemas import ReadingCreate
 
 def get_readings(db: Session):
 
-    return db.query(Reading).all()
+    return db.query(Reading)\
+        .order_by(Reading.fecha.desc())\
+        .all()
 
 # -------------------------
 # GET LAST

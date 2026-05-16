@@ -38,7 +38,8 @@ def create_reading(
         corriente=reading.corriente,
         potencia=reading.potencia,
         energia=reading.energia,
-        Sensor_Id=reading.Sensor_Id
+        Sensor_Id=reading.Sensor_Id,
+        fecha=reading.fecha
     )
 
     db.add(new_reading)

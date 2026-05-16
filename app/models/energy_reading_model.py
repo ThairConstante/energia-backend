@@ -13,6 +13,6 @@ class Reading(Base):
     potencia = Column( Float, nullable=True  )
     energia = Column( Float, nullable=True )
     Sensor_Id = Column( Integer, ForeignKey("sensor.Sensor_Id"))
-    fecha = Column( TIMESTAMP, server_default=func.now() )
+    fecha = Column(DateTime, nullable=False)
 
     

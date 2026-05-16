@@ -84,8 +84,7 @@ def create_relay(
 # =========================
 
 @app.put(
-    "/update/{relay_id}",
-    dependencies=[Depends(decode_token)]
+    "/update/{relay_id}"
 )
 def update_relay(
     relay_id: int,

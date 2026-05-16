@@ -19,6 +19,7 @@ class ReadingBase(BaseModel):
 # -------------------------
 
 class ReadingCreate(ReadingBase):
+    fecha: datetime
     pass
 
 # -------------------------

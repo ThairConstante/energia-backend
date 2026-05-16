@@ -22,7 +22,7 @@ app = APIRouter()
 
 @app.get(
     "/list",
-    dependencies=[Depends(decode_token)]
+    
 )
 def list_relays(
     db: Session = Depends(get_db)

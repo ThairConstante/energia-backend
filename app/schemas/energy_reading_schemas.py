@@ -13,6 +13,7 @@ class ReadingBase(BaseModel):
     potencia: float
     energia: float
     Sensor_Id: int
+    fecha: datetime
 
 # -------------------------
 # CREATE

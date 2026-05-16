@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, TIMESTAMP, func, ForeignKey, Date, Time, Text
+from sqlalchemy import Column, Integer, String, Float, DateTime, func, ForeignKey, Date, Time, Text
 from app.core.config import Base
 
 
